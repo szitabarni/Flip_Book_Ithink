@@ -3,7 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Lapozható Flipbook</title>
+
+  <!-- 1. jQuery betöltése (EZ HIÁNYZOTT) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- 2. Turn.js betöltése (helyi fájl vagy CDN) -->
+  <!-- Ha a saját turn.min.js fájlod van a repo gyökerében, akkor jó így: -->
   <script src="turn.min.js"></script>
+
   <style>
     body {
       background: #ddd;
@@ -14,7 +21,7 @@
       justify-content: center;
     }
     #flipbook {
-      width: 940px;
+      width: 940px;   /* 2 x 470 */
       height: 600px;
     }
     .page {
@@ -81,8 +88,10 @@
     <div class="page"><img src="page46.jpg" alt="Oldal 46"></div>
     <div class="page"><img src="page47.jpg" alt="Oldal 47"></div>
   </div>
+
   <script>
-    $(document).ready(function() {
+    // Ha a jQuery betöltődött, ez szépen lefut
+    $(function() {
       $("#flipbook").turn({
         width: 940,
         height: 600,
