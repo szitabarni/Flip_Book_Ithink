@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Lapozható Flipbook</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/turn.js@4/turn.min.js"></script>
+  <style>
+    body {
+      background: #ddd;
+      margin: 0;
+      padding: 30px 0;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+    #flipbook {
+      width: 940px;
+      height: 600px;
+    }
+    .page {
+      width: 470px;
+      height: 600px;
+      background-color: white;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+    .page img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div id="flipbook">
+    <div class="page"><img src="page1.jpg" alt="Oldal 1"></div>
+    <div class="page"><img src="page2.jpg" alt="Oldal 2"></div>
+    <div class="page"><img src="page3.jpg" alt="Oldal 3"></div>
+    <div class="page"><img src="page4.jpg" alt="Oldal 4"></div>
+    <div class="page"><img src="page5.jpg" alt="Oldal 5"></div>
+    <div class="page"><img src="page6.jpg" alt="Oldal 6"></div>
+    <div class="page"><img src="page7.jpg" alt="Oldal 7"></div>
+    <div class="page"><img src="page8.jpg" alt="Oldal 8"></div>
+    <div class="page"><img src="page9.jpg" alt="Oldal 9"></div>
+    <div class="page"><img src="page10.jpg" alt="Oldal 10"></div>
+    <div class="page"><img src="page11.jpg" alt="Oldal 11"></div>
+    <div class="page"><img src="page12.jpg" alt="Oldal 12"></div>
+    <div class="page"><img src="page13.jpg" alt="Oldal 13"></div>
+    <div class="page"><img src="page14.jpg" alt="Oldal 14"></div>
+    <div class="page"><img src="page15.jpg" alt="Oldal 15"></div>
+    <div class="page"><img src="page16.jpg" alt="Oldal 16"></div>
+    <div class="page"><img src="page17.jpg" alt="Oldal 17"></div>
+    <div class="page"><img src="page18.jpg" alt="Oldal 18"></div>
+    <div class="page"><img src="page19.jpg" alt="Oldal 19"></div>
+    <div class="page"><img src="page20.jpg" alt="Oldal 20"></div>
+    <div class="page"><img src="page21.jpg" alt="Oldal 21"></div>
+    <div class="page"><img src="page22.jpg" alt="Oldal 22"></div>
+    <div class="page"><img src="page23.jpg" alt="Oldal 23"></div>
+    <div class="page"><img src="page24.jpg" alt="Oldal 24"></div>
+    <div class="page"><img src="page25.jpg" alt="Oldal 25"></div>
+    <div class="page"><img src="page26.jpg" alt="Oldal 26"></div>
+    <div class="page"><img src="page27.jpg" alt="Oldal 27"></div>
+    <div class="page"><img src="page28.jpg" alt="Oldal 28"></div>
+    <div class="page"><img src="page29.jpg" alt="Oldal 29"></div>
+    <div class="page"><img src="page30.jpg" alt="Oldal 30"></div>
+    <div class="page"><img src="page31.jpg" alt="Oldal 31"></div>
+    <div class="page"><img src="page32.jpg" alt="Oldal 32"></div>
+    <div class="page"><img src="page33.jpg" alt="Oldal 33"></div>
+    <div class="page"><img src="page34.jpg" alt="Oldal 34"></div>
+    <div class="page"><img src="page35.jpg" alt="Oldal 35"></div>
+    <div class="page"><img src="page36.jpg" alt="Oldal 36"></div>
+    <div class="page"><img src="page37.jpg" alt="Oldal 37"></div>
+    <div class="page"><img src="page38.jpg" alt="Oldal 38"></div>
+    <div class="page"><img src="page39.jpg" alt="Oldal 39"></div>
+    <div class="page"><img src="page40.jpg" alt="Oldal 40"></div>
+    <div class="page"><img src="page41.jpg" alt="Oldal 41"></div>
+    <div class="page"><img src="page42.jpg" alt="Oldal 42"></div>
+    <div class="page"><img src="page43.jpg" alt="Oldal 43"></div>
+    <div class="page"><img src="page44.jpg" alt="Oldal 44"></div>
+    <div class="page"><img src="page45.jpg" alt="Oldal 45"></div>
+    <div class="page"><img src="page46.jpg" alt="Oldal 46"></div>
+    <div class="page"><img src="page47.jpg" alt="Oldal 47"></div>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("#flipbook").turn({
+        width: 940,
+        height: 600,
+        autoCenter: true,
+        elevation: 50,
+        gradients: true
+      });
+    });
+  </script>
+</body>
+</html>
