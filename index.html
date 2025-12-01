@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <title>Lapozható Flipbook</title>
 
-  <!-- 1. jQuery - EZT KELL ELSŐNEK BETÖLTENI -->
+  <!-- 1. jQuery KELL ELSŐNEK -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <!-- 2. TURN.JS - EZT KELL MÁSODIKNAK -->
+  <!-- 2. Turn.js KELL MÁSODIKNAK -->
   <script src="turn.min.js"></script>
 
   <style>
@@ -20,7 +20,7 @@
       justify-content: center;
     }
     #flipbook {
-      width: 940px;   /* két oldal egymás mellett */
+      width: 940px;
       height: 600px;
     }
     .page {
@@ -41,15 +41,67 @@
 <body>
 
   <div id="flipbook">
-    <div class="page"><img src="page1.jpg" alt="Oldal 1"></div>
-    <div class="page"><img src="page2.jpg" alt="Oldal 2"></div>
-    <div class="page"><img src="page3.jpg" alt="Oldal 3"></div>
-    <div class="page"><img src="page4.jpg" alt="Oldal 4"></div>
-    <div class="page"><img src="page5.jpg" alt="Oldal 5"></div>
-    <div class="page"><img src="page6.jpg" alt="Oldal 6"></div>
-    <div class="page"><img src="page7.jpg" alt="Oldal 7"></div>
-    <div class="page"><img src="page8.jpg" alt="Oldal 8"></div>
-    <div class="page"><img src="page9.jpg" alt="Oldal 9"></div>
-    <div class="page"><img src="page10.jpg" alt="Oldal 10"></div>
-    <div class="page"><img src="page11.jpg" alt="Oldal 11"></div>
-    <div class="page"><img src="page12.jpg"
+    <div class="page"><img src="page1.jpg"></div>
+    <div class="page"><img src="page2.jpg"></div>
+    <div class="page"><img src="page3.jpg"></div>
+    <div class="page"><img src="page4.jpg"></div>
+    <div class="page"><img src="page5.jpg"></div>
+    <div class="page"><img src="page6.jpg"></div>
+    <div class="page"><img src="page7.jpg"></div>
+    <div class="page"><img src="page8.jpg"></div>
+    <div class="page"><img src="page9.jpg"></div>
+    <div class="page"><img src="page10.jpg"></div>
+    <div class="page"><img src="page11.jpg"></div>
+    <div class="page"><img src="page12.jpg"></div>
+    <div class="page"><img src="page13.jpg"></div>
+    <div class="page"><img src="page14.jpg"></div>
+    <div class="page"><img src="page15.jpg"></div>
+    <div class="page"><img src="page16.jpg"></div>
+    <div class="page"><img src="page17.jpg"></div>
+    <div class="page"><img src="page18.jpg"></div>
+    <div class="page"><img src="page19.jpg"></div>
+    <div class="page"><img src="page20.jpg"></div>
+    <div class="page"><img src="page21.jpg"></div>
+    <div class="page"><img src="page22.jpg"></div>
+    <div class="page"><img src="page23.jpg"></div>
+    <div class="page"><img src="page24.jpg"></div>
+    <div class="page"><img src="page25.jpg"></div>
+    <div class="page"><img src="page26.jpg"></div>
+    <div class="page"><img src="page27.jpg"></div>
+    <div class="page"><img src="page28.jpg"></div>
+    <div class="page"><img src="page29.jpg"></div>
+    <div class="page"><img src="page30.jpg"></div>
+    <div class="page"><img src="page31.jpg"></div>
+    <div class="page"><img src="page32.jpg"></div>
+    <div class="page"><img src="page33.jpg"></div>
+    <div class="page"><img src="page34.jpg"></div>
+    <div class="page"><img src="page35.jpg"></div>
+    <div class="page"><img src="page36.jpg"></div>
+    <div class="page"><img src="page37.jpg"></div>
+    <div class="page"><img src="page38.jpg"></div>
+    <div class="page"><img src="page39.jpg"></div>
+    <div class="page"><img src="page40.jpg"></div>
+    <div class="page"><img src="page41.jpg"></div>
+    <div class="page"><img src="page42.jpg"></div>
+    <div class="page"><img src="page43.jpg"></div>
+    <div class="page"><img src="page44.jpg"></div>
+    <div class="page"><img src="page45.jpg"></div>
+    <div class="page"><img src="page46.jpg"></div>
+    <div class="page"><img src="page47.jpg"></div>
+  </div>
+
+  <!-- 3. Flipbook indítása -->
+  <script>
+    $(function() {
+      $("#flipbook").turn({
+        width: 940,
+        height: 600,
+        autoCenter: true,
+        elevation: 50,
+        gradients: true
+      });
+    });
+  </script>
+
+</body>
+</html>
